@@ -1,24 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+
+import Card from './components/UI/Card';
+import Header from './components/UI/Layout/Header';
+import  Meals  from './components/Meals/Meals.js'
+import { DUMMY_MEALS } from './components/Meals/MealItem';
+import { Fragment, useState } from 'react';
+import Cart from './components/OrderDisplay/Cart';
+import CartContextProvider from './store/cartContextProvider';
+import MealsSummary from './components/Meals/MealSummary';
+
+
 
 function App() {
+
+  const[showCart,setShowCart]=useState(false);
+
+function showCartHandler(){
+  setShowCart(true);
+}
+function hideCartHandler(){
+  setShowCart(false);
+}
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    
+    <CartContextProvider>
+    {showCart&&<Cart onClose={hideCartHandler}></Cart>}
+    <Header onClick={showCartHandler}>
+     </Header>
+     <MealsSummary></MealsSummary>
+    {!showCart&&<Meals mealItem={DUMMY_MEALS}></Meals>}
+     
+
+    </CartContextProvider>
+  
   );
 }
 

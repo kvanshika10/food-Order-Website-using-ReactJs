@@ -1,0 +1,77 @@
+.meallist{
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgb(161, 4, 4);
+  
+}
+
+
+
+
+
+
+
+.name{
+    font-weight: bolder;
+    font-size: 1.17rem;
+    display: block;
+    margin-bottom: 10px;
+    
+
+}
+
+
+.price{
+    font-weight: bold;
+    color:#782504;
+    font-size: 0.75rem;
+  
+}
+
+
+
+.dish span{
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+.amount{
+    font-size: 1rem;
+    font-weight: bolder;
+    display: inline-flex;
+}
+.no{
+    border:1px solid black;
+    margin-left: 5rem ;
+    border-radius: 0.25rem;
+    padding: 5px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    
+    
+
+
+}
+
+.button{
+    background-color:white;
+    color: #ad5502;
+   padding: 0.10rem 1.10rem;
+   border: 1px solid black;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font: inherit;
+   font-weight: bold;
+   margin-top: 7px;
+   margin-left: 5px;
+   cursor: pointer;
+   border-radius: 10px;
+
+}
+
+.button:hover, .button:active{
+    background-color: grey;
+  
+  }

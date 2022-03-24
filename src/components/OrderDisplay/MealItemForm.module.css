@@ -1,0 +1,58 @@
+.meal{
+    padding: 2rem;
+    margin: 2rem auto;
+    width: 50rem;
+    max-width: 90%;
+  }
+
+.button1{
+    background-color:#8a2b06 ;
+    color:white;
+   padding: 0.45rem 1.5rem;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   font: inherit;
+   font-weight: bold;
+   border:none;
+   border-radius: 15px;
+   margin-top: 7px;
+   margin-left: 12px;
+   cursor: pointer;
+}
+.button2{
+    color:#8a2b06 ;
+    background-color:white;
+    border: 1px solid black;
+   padding: 0.45rem 1.5rem;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   font: inherit;
+   font-weight: bold;
+   
+   border-radius: 15px;
+   margin-top: 7px;
+   margin-left: 12px;
+   cursor: pointer;
+}
+.bill{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 4rem;
+    padding-top: 0;
+}
+
+h3{
+    margin-top: 0;
+    padding-top: 0;
+    margin-left: 20px;
+    font-size: 1.2rem;
+    
+}
+
+.order{
+    display: flex;
+    justify-content: flex-end;
+}

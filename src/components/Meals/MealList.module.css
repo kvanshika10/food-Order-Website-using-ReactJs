@@ -1,0 +1,66 @@
+.meallist{
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #ccc;
+  
+}
+
+
+
+
+
+
+
+.name{
+    font-weight: bolder;
+    font-size: 1.17rem;
+    display: block;
+    
+
+}
+
+.ingredients{
+    font-style: italic;
+    font-size: 0.90rem;
+    
+}
+.price{
+    font-weight: bold;
+    color: #ad5502;
+    font-size: 1.10rem;
+  
+}
+
+
+
+.dish span{
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+.amount{
+    font-size: 1rem;
+    font-weight: bolder;
+}
+
+
+.input {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+  
+  .input label {
+    font-weight: bold;
+    margin-right: 1rem;
+  }
+  
+  .input input {
+    width: 3rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font: inherit;
+    padding-left: 0.5rem;
+  }
+  
